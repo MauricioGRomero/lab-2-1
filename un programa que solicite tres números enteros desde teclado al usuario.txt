@@ -1,0 +1,33 @@
+# Solicitar tres números enteros desde el usuario
+numero1 = int(input("Ingrese el primer número: "))
+numero2 = int(input("Ingrese el segundo número: "))
+numero3 = int(input("Ingrese el tercer número: "))
+
+# Determinar el número más grande
+if numero1 >= numero2 and numero1 >= numero3:
+    maximo = numero1
+elif numero2 >= numero1 and numero2 >= numero3:
+    maximo = numero2
+else:
+    maximo = numero3
+
+# Determinar el número más pequeño
+if numero1 <= numero2 and numero1 <= numero3:
+    minimo = numero1
+elif numero2 <= numero1 and numero2 <= numero3:
+    minimo = numero2
+else:
+    minimo = numero3
+
+# Determinar el número de en medio
+if numero1 != maximo and numero1 != minimo:
+    medio = numero1
+elif numero2 != maximo and numero2 != minimo:
+    medio = numero2
+else:
+    medio = numero3
+
+# Imprimir los resultados
+print("El número más grande es:", maximo)
+print("El número más pequeño es:", minimo)
+print("El número de en medio es:", medio)

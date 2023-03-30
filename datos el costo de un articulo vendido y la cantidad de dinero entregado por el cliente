@@ -1,0 +1,13 @@
+
+costo = float(input("Ingrese el costo del producto: "))
+pago = float(input("Ingrese la cantidad de dinero entregada por el cliente: "))
+
+cambio = pago - costo
+if cambio == 0:
+    print("El cliente pagó exactamente lo que vale el producto.")
+
+elif cambio > 0:
+    print("El cambio que se debe entregar al cliente es: $", cambio)
+else:
+    falta = costo - pago
+    print("Falta por pagar: $", falta)
